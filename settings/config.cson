@@ -1,0 +1,23 @@
+"*":
+  "bracket-matcher":
+    autocompleteBrackets: false
+  core:
+    telemetryConsent: "no"
+    themes: [
+      "seti-ui"
+      "monokai-seti"
+    ]
+    uriHandlerRegistration: "always"
+    warnOnLargeFileLimit: 10
+  editor:
+    fontSize: 15
+    showIndentGuide: true
+    softWrap: true
+  "exception-reporting":
+    userId: "d97f7e0c-6787-4773-ba25-a85c3347044d"
+  minimap:
+    absoluteMode: true
+    adjustAbsoluteModeHeight: true
+    displayCodeHighlights: false
+  welcome:
+    showOnStartup: false

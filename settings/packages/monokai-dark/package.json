@@ -1,0 +1,47 @@
+{
+  "_from": "https://www.atom.io/api/packages/monokai-dark/versions/1.5.0/tarball",
+  "_id": "monokai-dark@1.5.0",
+  "_inBundle": false,
+  "_integrity": "sha512-Zc2J5mX6qpb/qlA+YixwcCqsnjNUEmj8lVp8B0ZVJTRD6lD0RaV3HhqO/9RfplhO3S8iEi0FoiAVwz9v5D3MnA==",
+  "_location": "/monokai-dark",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/monokai-dark/versions/1.5.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/monokai-dark/versions/1.5.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/monokai-dark/versions/1.5.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/monokai-dark/versions/1.5.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/monokai-dark/versions/1.5.0/tarball",
+  "_shasum": "45c3c7f0b47babd0df6aaf517613f121ea3d3eac",
+  "_spec": "https://www.atom.io/api/packages/monokai-dark/versions/1.5.0/tarball",
+  "_where": "C:\\Users\\Bon\\AppData\\Local\\Temp\\apm-install-dir-118924-8816-1w4rfex.stfq",
+  "author": {
+    "name": "James Doyle",
+    "email": "james2doyle@gmail.com",
+    "url": "http://ohdoylerules.com"
+  },
+  "bugs": {
+    "url": "https://github.com/james2doyle/atom-monokai-dark/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A dark monokai theme",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/james2doyle/atom-monokai-dark",
+  "license": "MIT",
+  "name": "monokai-dark",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/james2doyle/atom-monokai-dark.git"
+  },
+  "theme": "syntax",
+  "version": "1.5.0"
+}
