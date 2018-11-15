@@ -1,0 +1,162 @@
+@white: #fff;
+@blue: #66D9EF;
+@gutter: #F8F8F2;
+@dark: #0D0D0D;
+@comment: #75715E;
+@string: #E6DB74;
+@const: #AE81FF;
+@keyword: #F92672;
+@storage: @keyword;
+@tag: @keyword;
+@cursor: #F8F8F0;
+@invalid: @cursor;
+@invalid-bg: @keyword;
+@class: #A6E22E;
+@function: @class;
+@attribute: @class;
+@parameter: #FD971F;
+
+atom-text-editor {
+  ::-webkit-scrollbar {
+    width: 0.5em;
+    height: 0.5em;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: @dark;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: lighten(@dark, 10%);
+  }
+
+  .wrap-guide {
+    background: fade(@white, 1%);
+  }
+
+  .indent-guide {
+    color: fade(@white, 15%);
+  }
+
+  &, .gutter {
+    background-color: @dark;
+    color: @gutter;
+  }
+
+  &.is-focused .cursor {
+    border-color: @cursor;
+  }
+
+  &.is-focused .selection .region {
+    background-color: lighten(@dark, 20%);
+  }
+
+  &.is-focused .line-number.cursor-line-no-selection,
+  &.is-focused .line.cursor-line {
+    background-color: lighten(@dark, 10%);
+  }
+
+  .syntax--comment {
+    color: @comment;
+  }
+
+  .syntax--string {
+    color: @string;
+  }
+
+  .syntax--constant.syntax--numeric {
+    color: @const;
+  }
+
+  .syntax--constant.syntax--language {
+    color: @const;
+  }
+
+  .syntax--constant.syntax--character,
+  .syntax--constant.syntax--other {
+    color: @const;
+  }
+
+  .variable {
+  }
+
+  .syntax--keyword {
+    color: @keyword;
+  }
+
+  .syntax--storage {
+    color: @storage;
+  }
+
+  .syntax--storage.syntax--type {
+    font-style: italic;
+    color: @blue;
+  }
+
+  .syntax--entity.syntax--name.syntax--class {
+    text-decoration: underline;
+    color: @class;
+  }
+
+  .syntax--entity.syntax--other.syntax--inherited-class {
+    font-style: italic;
+    text-decoration: underline;
+    color: @class;
+  }
+
+  .syntax--entity.syntax--name.syntax--function {
+    color: @function;
+  }
+
+  .syntax--variable.syntax--parameter {
+    font-style: italic;
+    color: @parameter;
+  }
+
+  .syntax--entity.syntax--name.syntax--tag {
+    color: @tag;
+  }
+
+  .syntax--entity.syntax--other.syntax--attribute-name {
+    color: @attribute;
+  }
+
+  .syntax--support.syntax--function {
+    color: @blue;
+  }
+
+  .syntax--support.syntax--constant {
+    color: @blue;
+  }
+
+  .syntax--support.syntax--type,
+  .syntax--support.syntax--class {
+    font-style: italic;
+    color: @blue;
+  }
+
+  .syntax--invalid {
+    color: @invalid;
+    background-color: @invalid-bg;
+  }
+
+  .syntax--invalid.syntax--deprecated {
+    color: @invalid;
+    background-color: @const;
+  }
+
+  .invisible-character {
+    color: @dark;
+  }
+}
+
+atom-text-editor.editor {
+    .is-focused .selection .region {
+      background-color: lighten(@dark, 20%);
+    }
+
+    .is-focused .line-number.cursor-line-no-selection,
+    .is-focused .line.cursor-line {
+      background-color: lighten(@dark, 10%);
+    }
+}
